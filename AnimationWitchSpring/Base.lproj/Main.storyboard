@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-0X-u4f">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-0X-u4f" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="60" y="67" width="255" height="145"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Pm3-gl-0Vk">
@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-MX-Dyd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdd-MX-Dyd" customClass="SpringButton" customModule="SpringAnimation">
                                 <rect key="frame" x="59.666666666666657" y="562.33333333333337" width="255.99999999999997" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -83,7 +83,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z87-Yp-9VU"/>
+                                    <action selector="runSpringAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VrY-m2-czi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,8 +110,7 @@
                         <outlet property="durationLabel" destination="gZo-OZ-m9s" id="i93-Jf-QRY"/>
                         <outlet property="forceLabel" destination="uWE-HL-fFf" id="5zc-Cr-dUT"/>
                         <outlet property="presetLabel" destination="2NS-ye-hhI" id="h1q-Hc-6x0"/>
-                        <outlet property="runButton" destination="xdd-MX-Dyd" id="tXg-Nb-U9T"/>
-                        <outlet property="springAnimationView" destination="8v3-0X-u4f" id="GpQ-eH-tX5"/>
+                        <outlet property="springAnimationView" destination="8v3-0X-u4f" id="k6s-Sm-Sre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
